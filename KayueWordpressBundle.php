@@ -30,8 +30,8 @@ class KayueWordpressBundle extends Bundle
         parent::build($container);
 
         // Security
-        $extension = $container->getExtension('security');
-        $extension->addSecurityListenerFactory(new WordpressFactory());
+        // $extension = $container->getExtension('security');
+        // $extension->addSecurityListenerFactory(new WordpressFactory());
 
         // Shortcode
         $container->addCompilerPass(new ShortcodeCompilerPass());

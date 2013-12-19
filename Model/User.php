@@ -379,7 +379,7 @@ class User implements UserInterface, \Serializable
      *
      * @return Boolean
      */
-    public function equals(UserInterface $user)
+    public function equals(\Symfony\Component\Security\Core\User\UserInterface $user)
     {
         return $this->getUsername() === $user->getUsername();
     }
